@@ -68,11 +68,12 @@ secondItem.style.backgroundColor = "skyblue";
 //~~~~~~~~querrySelectorAll
 
 var titles = document.querySelectorAll(".title");
-console.log(titles);
 titles[0].innerText = "my items";
 
 var odd = document.querySelectorAll("li:nth-child(odd)");
+var even = document.querySelectorAll("li:nth-child(even)");
 
 for (let i = 0; i < odd.length; i++) {
   odd[i].style.backgroundColor = "red";
+  even[i].style.backgroundColor = "blue";
 }
